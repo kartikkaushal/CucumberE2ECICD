@@ -46,6 +46,9 @@ public class BaseTest {
         if (browserName.contains("chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--disable-gpu"); 
+            options.addArguments("--disable-dev-shm-usage"); 
+            options.addArguments("--no-sandbox"); 
             WebDriverManager.chromedriver().driverVersion("133").setup();
 			/*
 			 * if (browserName.contains("headless")) { options.addArguments("headless"); }
