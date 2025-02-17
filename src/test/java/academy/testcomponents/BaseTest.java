@@ -45,10 +45,11 @@ public class BaseTest {
 
         if (browserName.contains("chrome")) {
             ChromeOptions options = new ChromeOptions();
-            WebDriverManager.chromedriver().setup();
-            if (browserName.contains("headless")) {
-                options.addArguments("headless");
-            }
+            options.addArguments("--remote-allow-origins=*");
+            WebDriverManager.chromedriver().driverVersion("133").setup();
+			/*
+			 * if (browserName.contains("headless")) { options.addArguments("headless"); }
+			 */
             driver = new ChromeDriver(options);
             driver.manage().window().setSize(new Dimension(1440, 900));//full screen
 

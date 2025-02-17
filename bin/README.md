@@ -16,7 +16,7 @@ Which can be used across different web based applications.It is used to make the
 - Jenkins - CI/CD
 
 ## Steps to clone execute the tests
-`git clone https://github.com/kaushalkartik/CucumberE2ECICD.git`<br/>
+`git clone https://github.com/keshavjha06/SeleniumE2EProject.git`<br/>
  `cd SeleniumE2EProject`<br/>
  `mvn clean install`<br/>
  `mvn test`
@@ -27,7 +27,3 @@ Which can be used across different web based applications.It is used to make the
 
 ## Reporting:
 - The framework produce index.html report. It resides in the reports folder.This reports gives the link to all the different component of the TestNG reports like Groups & Reporter Output. On clicking these will display detailed descriptions of execution.
-
-
-## About Project
-This is the sample cucumber project use to trigger from bamboo
